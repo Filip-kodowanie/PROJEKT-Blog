@@ -1,0 +1,53 @@
+header{
+    background-color: rgb(25, 0, 255);
+    clear: both;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+#login {
+    float: right;
+}
+td {
+    
+    background-color: white;
+    border-radius: 5px;
+    font-size: large;
+   
+}
+table {
+    
+   background-color: rgb(25, 0, 255);
+    border-radius: 15px;
+    margin: auto;
+}
+td:hover {
+background-color: rgb(173, 168, 161);
+}
+th {
+    color: white;
+    font-size: larger;
+    
+}
+#otworz  {
+    border: none;
+border-radius: 15px;
+background-color: rgb(15, 0, 148);
+}
+#otworz a {
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+}
+#otworz:hover {
+background-color: rgb(41, 41, 248);
+
+}
+#logowanie {
+    width: 30%;
+    margin: auto;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    border-radius: 20px;
+}
