@@ -2,6 +2,9 @@ header{
     background-color: rgb(25, 0, 255);
     clear: both;
 }
+h1:hover {
+text-shadow: 1px 1px 5px  white;
+}
 h1 {
     text-align: center;
     color: white;
@@ -14,8 +17,10 @@ td {
     background-color: white;
     border-radius: 5px;
     font-size: large;
-   
+    text-align: center;
+    
 }
+
 table {
     
    background-color: rgb(25, 0, 255);
@@ -23,7 +28,9 @@ table {
     margin: auto;
 }
 td:hover {
-background-color: rgb(173, 168, 161);
+background-color: rgb(240, 238, 235);
+text-shadow: 1px 1px 2px  black;
+
 }
 th {
     color: white;
@@ -41,13 +48,36 @@ background-color: rgb(15, 0, 148);
     text-decoration: none;
 }
 #otworz:hover {
-background-color: rgb(41, 41, 248);
-
+background-color: rgb(25, 0, 255);
+color: rgb(41, 41, 248);
 }
+
 #logowanie {
     width: 30%;
     margin: auto;
     background-color: rgb(238, 238, 238);
     text-align: center;
     border-radius: 20px;
+    height: 400px;
+
+}
+#menu {
+    
+    margin-bottom: auto;
+}
+#logowanie h2 {
+    font-size:xx-large;
+    padding-top: 10px;
+    padding-bottom: 90px;
+}
+#logowanie h3 {
+    font-size: x-large;
+}
+#logowanie a {
+text-decoration: none;
+color: black;
+}
+header a {
+    text-decoration: none;
+
 }

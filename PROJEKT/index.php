@@ -12,7 +12,7 @@ require_once('config.php');
 </head>
 <body>
     <header>
-        <h1>BLOG</h1>
+        <a href="index.php"><h1>BLOG</h1></a>
         <a id="login" href="login.php"><p>zaloguj się</p></a>
     </header>
     <?php
