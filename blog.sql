@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Lis 19, 2025 at 05:48 PM
+-- Generation Time: Lis 20, 2025 at 08:39 AM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.2.12
 
@@ -30,17 +30,19 @@ SET time_zone = "+00:00";
 CREATE TABLE `articles` (
   `article_id` mediumint(9) NOT NULL,
   `title` text NOT NULL,
-  `content` text NOT NULL DEFAULT 'użytkownik nie napisał jeszcze treści'
+  `content` text NOT NULL DEFAULT 'użytkownik nie napisał jeszcze treści',
+  `summary` text NOT NULL DEFAULT 'użytkownik nie napisał jeszcze treści'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `articles`
 --
 
-INSERT INTO `articles` (`article_id`, `title`, `content`) VALUES
-(1, 'elo', 'zelo'),
-(2, 'czesc', '2'),
-(4, 'usun', 'użytkownik nie napisał jeszcze treści');
+INSERT INTO `articles` (`article_id`, `title`, `content`, `summary`) VALUES
+(1, 'elo', 'zelo', 'użytkownik nie napisał jeszcze treści'),
+(2, 'SIEMA', 'hej', 'supoer'),
+(5, 'paweł', 'Jeszcze gdy chodziłem do podstawówki, to był tam taki Paweł, i ja jechałem na rowerze, i go spotkałem, i potem jeszcze pojechałem do biedronki na lody, i po drodze do domu wtedy jeszcze, już do domu pojechałem', 'użytkownik nie napisał jeszcze treści'),
+(6, 'halo', 'użytkownik nie napisał jeszcze treści', 'użytkownik nie napisał jeszcze treści');
 
 -- --------------------------------------------------------
 
@@ -86,7 +88,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `articles`
 --
 ALTER TABLE `articles`
-  MODIFY `article_id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `article_id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `user`
