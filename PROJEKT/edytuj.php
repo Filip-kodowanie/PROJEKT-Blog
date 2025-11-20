@@ -37,14 +37,19 @@ require_once('config.php');
             <input type="text" name="zawart">
             <br>
             <br>
+        <label for="summary">podsumowanie:</label>
+            <input type="text" name="summary">
+            <br>
+            <br>
         <button type="submit">zatwierdź</button>
         <?php 
             if(isset($_POST['tytul']) && isset($_POST['zawart'])){
             $tytul = $_POST['tytul'];
             $zawart = $_POST['zawart'];
+            $sum = $_POST['summary'];
              $id = $_GET['id'];
             //$sql2 = "UPDATE articles SET articles.title = ?, articles.content = ? WHERE article_id = ?";
-            $sql2 = "UPDATE articles SET articles.title = " . "'" . $tytul . "'" . ", articles.content = ". "'" . $zawart . "'" . " WHERE article_id = " . $id;
+            $sql2 = "UPDATE articles SET articles.title = " . "'" . $tytul . "'" . ", articles.content = ". "'" . $zawart . "'" . ", articles.summary = ". "'" . $sum . "'" . " WHERE article_id = " . $id;
             $sql3 = $sql2;
             $stmt2 = $mysqli->prepare($sql3);
             //$stmt2->bind_param("ssi", $_POST['tytul'], $_POST['zawart'], $_POST['zawart']);

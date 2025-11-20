@@ -22,7 +22,7 @@ require_once('config.php');
     $wynik = $stmt->get_result();
     echo "<table> <tr> <th></th><th></th> <th>tytuł artykułu</th> <th>zawartość</th> </tr>";
     while($article = $wynik->fetch_assoc()) {
-        echo '<tr> <td id="otworz"> <a href="edytuj.php?id=' . $article['article_id'] .'" id="edit">edytuj</a></td> <td id="otworz"><a href="usun.php?id=' . $article['article_id'] .'" id="usun">usuń</a> </td> <td>' . $article['title'] . "</td> <td>". $article['content'] . "</td> </tr>";
+        echo '<tr> <td id="otworz"> <a href="edytuj.php?id=' . $article['article_id'] .'" id="edit">edytuj</a></td> <td id="otworz"><a href="usun.php?id=' . $article['article_id'] .'" id="usun">usuń</a> </td> <td>' . $article['title'] . "</td> <td>". $article['summary'] . "</td> </tr>";
     }
     echo "</table>";
     ?>

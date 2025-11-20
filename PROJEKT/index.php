@@ -15,6 +15,7 @@ require_once('config.php');
         <a href="index.php"><h1>BLOG</h1></a>
         <a id="login" href="login.php"><p>zaloguj się</p></a>
     </header>
+    <section id="tabela">
     <?php
     $sql = "SELECT * FROM blog.articles";
     $stmt = $mysqli->prepare($sql);
@@ -22,9 +23,10 @@ require_once('config.php');
     $wynik = $stmt->get_result();
     echo "<table> <tr> <th></th> <th>tytuł artykułu</th> <th>zawartość</th> </tr>";
     while($article = $wynik->fetch_assoc()) {
-        echo '<tr> <td id="otworz"> <a href="">otwórz</a></td> <td>' . $article['title'] . "</td> <td>". $article['content'] . "</td> </tr>";
+        echo '<tr> <td id="otworz"> <a href="">otwórz</a></td> <td>' . $article['title'] . "</td> <td>". $article['summary'] . "</td> </tr>";
     }
     echo "</table>";
     ?>
+    </section>
 </body>
 </html>
