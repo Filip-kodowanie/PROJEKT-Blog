@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Lis 20, 2025 at 08:39 AM
+-- Generation Time: Lis 21, 2025 at 02:35 PM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.2.12
 
@@ -42,7 +42,9 @@ INSERT INTO `articles` (`article_id`, `title`, `content`, `summary`) VALUES
 (1, 'elo', 'zelo', 'użytkownik nie napisał jeszcze treści'),
 (2, 'SIEMA', 'hej', 'supoer'),
 (5, 'paweł', 'Jeszcze gdy chodziłem do podstawówki, to był tam taki Paweł, i ja jechałem na rowerze, i go spotkałem, i potem jeszcze pojechałem do biedronki na lody, i po drodze do domu wtedy jeszcze, już do domu pojechałem', 'użytkownik nie napisał jeszcze treści'),
-(6, 'halo', 'użytkownik nie napisał jeszcze treści', 'użytkownik nie napisał jeszcze treści');
+(7, 'hejka', '', 'halo'),
+(8, '5', '5', '5'),
+(9, '2', '', '3');
 
 -- --------------------------------------------------------
 
@@ -88,7 +90,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `articles`
 --
 ALTER TABLE `articles`
-  MODIFY `article_id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `article_id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `user`
