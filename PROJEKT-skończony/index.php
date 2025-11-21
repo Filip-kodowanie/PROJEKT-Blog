@@ -172,20 +172,10 @@ float: left;
 
 <div class="ad right-ad">
         <a href="https://wargaming.com">
-    <img src="reklama2.webp" width="120" height="600">
+    <img src="reklama3.webp.png" width="120" height="600">
 </a>    
 </div>
     <?php
-    //$sql3 = "SELECT SUBSTRING(articles.content, 1, 40) AS fragment FROM articles;";
-    ///$stmt3 = $mysqli->prepare($sql3);
-///$stmt3 ->execute();
-   // $wynik3 = $stmt3->get_result();
-   // while($zaw = $wynik3->fetch_assoc()) {
-   // $fragment= $zaw['fragment'];
-   // echo $fragment;
-   // }
-
-
     $sql2 = "SELECT COUNT(*) AS 'liczba' FROM articles;";
     $stmt2 = $mysqli->prepare($sql2);
     $stmt2 ->execute();
