@@ -15,6 +15,8 @@ require_once('config.php');
         <a href="index.php"><h1>BLOG <br> PANEL ADMINISTRATORA</h1></a>
         <a id="login" href="login.php"><p>zaloguj się</p></a>
     </header>
+    <main>
+        <button href="dodaj.php"><a href="dodaj.php">DODAJ ARTYKUŁ</a></button>
     <?php
     $sql = "SELECT * FROM blog.articles";
     $stmt = $mysqli->prepare($sql);
@@ -26,5 +28,6 @@ require_once('config.php');
     }
     echo "</table>";
     ?>
+    </main>
 </body>
 </html>
