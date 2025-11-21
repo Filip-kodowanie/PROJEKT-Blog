@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Lis 21, 2025 at 06:57 PM
+-- Generation Time: Lis 20, 2025 at 08:39 AM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.2.12
 
@@ -39,12 +39,10 @@ CREATE TABLE `articles` (
 --
 
 INSERT INTO `articles` (`article_id`, `title`, `content`, `summary`) VALUES
-(1, 'JavaScript (JS)', 'to wszechstronny, interpretowany język programowania używany głównie do tworzenia interaktywnych elementów na stronach internetowych. Działa po stronie klienta w przeglądarce, ale dzięki środowisku Node.js może być również używany po stronie serwera.\r\n\r\nJS pozwala na dynamiczną manipulację elementami HTML i CSS, obsługę zdarzeń (kliknięcia, ruchy myszy, wpisywanie tekstu), komunikację z serwerem (np. poprzez AJAX czy fetch) oraz tworzenie złożonych aplikacji webowych. Jest fundamentem współczesnych front-endowych frameworków, takich jak React, Vue czy Angular.', 'użytkownik nie napisał jeszcze treści'),
+(1, 'elo', 'zelo', 'użytkownik nie napisał jeszcze treści'),
+(2, 'SIEMA', 'hej', 'supoer'),
 (5, 'paweł', 'Jeszcze gdy chodziłem do podstawówki, to był tam taki Paweł, i ja jechałem na rowerze, i go spotkałem, i potem jeszcze pojechałem do biedronki na lody, i po drodze do domu wtedy jeszcze, już do domu pojechałem', 'użytkownik nie napisał jeszcze treści'),
-(6, 'Seat Ibiza 6J', 'o miejski hatchback hiszpańskiej marki należącej do koncernu Volkswagen. Model ten wyróżnia się dynamiczną, agresywną linią nadwozia i solidną jakością wykonania. Oparty na tej samej płycie podłogowej co VW Polo, oferuje dobre prowadzenie, niezłą ekonomikę oraz praktyczne wnętrze jak na auto segmentu B.\r\nW wersjach z tego okresu dostępne były oszczędne silniki benzynowe i diesla, a także sportowe odmiany FR i Cupra. To auto cenione za niskie koszty eksploatacji, niezawodność i przyjemność z jazdy w codziennym użytkowaniu.', 'użytkownik nie napisał jeszcze treści'),
-(7, 'Ważna Sprawa', '', 'omówienie zmian'),
-(9, 'PHP (Hypertext Preprocessor)', 'to popularny, skryptowy język programowania stosowany głównie do tworzenia dynamicznych stron i aplikacji internetowych. Działa po stronie serwera, co oznacza, że kod PHP jest wykonywany przed wysłaniem wynikowego HTML do przeglądarki użytkownika.\r\n\r\nJest łatwy w nauce, dobrze integruje się z bazami danych (szczególnie MySQL) i stanowi podstawę wielu systemów, takich jak WordPress, Drupal czy Joomla. PHP umożliwia obsługę formularzy, sesji, plików, generowanie treści oraz komunikację z serwerami i API. Dzięki dużej społeczności oraz bogatej liczbie bibliotek i frameworków (np. Laravel, Symfony), pozostaje jednym z najczęściej używanych języków w tworzeniu stron WWW', 'użytkownik nie napisał jeszcze treści'),
-(10, 'Ważna Sprawa 22', 'w', 'użytkownik nie napisał jeszcze treści');
+(6, 'halo', 'użytkownik nie napisał jeszcze treści', 'użytkownik nie napisał jeszcze treści');
 
 -- --------------------------------------------------------
 
@@ -90,7 +88,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `articles`
 --
 ALTER TABLE `articles`
-  MODIFY `article_id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `article_id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `user`

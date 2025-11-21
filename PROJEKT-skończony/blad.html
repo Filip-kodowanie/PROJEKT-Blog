@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERROR</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TŁO */
+body {
+    background: #f4f4f9;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background: #222;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+header h1:hover {
+    opacity: 0.7;
+}
+
+/* SEKCJA BŁĘDU (logowanie) */
+#logowanie {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+/* BOX */
+#menu {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+#menu h2 {
+    margin-bottom: 10px;
+}
+
+#menu h3 {
+    color: #cc0000;
+    margin-bottom: 10px;
+}
+
+#menu p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* PRZYCISK */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0077ff;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #005ccc;
+}
+
+/* Klikalny tekst przycisku bez podkreślenia */
+button a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+/* RESPONSYWNOŚĆ */
+@media(max-width: 500px) {
+    #menu {
+        width: 90%;
+        padding: 25px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header><a href="index.php"><h1>BLOG</h1></a></header>
+    <section id="logowanie">
+        <div id="menu">
+    <h2>LOGOWANIE</h2>
+    <h3>Błąd</h3>
+    <p>Wpisz poprawne hasło!</p>
+    <button><a  href="login.php">kontynuuj</a></button>
+    </div>
+    </section>
+</body>
+</html>

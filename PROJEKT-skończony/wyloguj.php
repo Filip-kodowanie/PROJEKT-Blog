@@ -1,0 +1,9 @@
+
+<?php
+require_once('config.php');
+session_start();
+$_SESSION['zalogowany'] = 'false';
+
+header('Location: index.php');
+            exit();
+?>
